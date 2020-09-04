@@ -1,38 +1,152 @@
-.App {
+/* NAVBAR  */
+
+header {
+  background-size: cover;
+  background-position: 50% 20%;
+  height: 100vh;
+  min-height: 700px;
+}
+
+nav {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  align-items: center;
+  width: 60%;
+  margin: auto;
+  height: 20vh;
+  letter-spacing: 3px;
+  font-weight: 500;
+}
+
+a:visited,
+a:active,
+a:focus,
+a:focus-within {
+  color: rgb(255, 255, 255);
+}
+
+a:hover {
+  color: rgb(46, 24, 24)
+}
+
+.hello {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center !important;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  height: 80vh;
+  width: 100%;
+  margin: 0 auto 0 auto;
+  vertical-align: middle;
+}
+
+.hello h1 {
   color: white;
+  font-size: 10vmin;
 }
 
-.App-link {
-  color: #61dafb;
+.hello p {
+  color: white;
+  font-size: 5vmin;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.hello .myresume {
+  color: rgb(173, 173, 173);
+  font-size: 2vmin;
+  letter-spacing: 5px;
+  font-weight: bold;
+}
+
+@media screen and (max-width :1024px) {
+  nav {
+    width: 80%;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media screen and (max-width :600px) {
+  nav {
+    width: 100%;
   }
+}
+
+@media screen and (max-width :600px) {
+  nav {
+    flex-direction: column;
+    font-size: 12px;
+    line-height: 0;
+  }
+}
+
+
+/* Portfolio */
+
+.portfolio {
+  background: rgb(51, 51, 51);
+  background: radial-gradient(circle, rgba(51, 51, 51, 1) 5%, rgba(34, 34, 34, 1) 88%);
+  overflow: hidden;
+  position: relative;
+}
+
+.portfolio .portfolioTitle {
+  background: linear-gradient(to right, #5a2222, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  padding: 50px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cards .card {
+  object-fit: cover;
+  flex: 0 1 40vmin;
+  margin: 30px;
+}
+
+.cards .card img {
+  max-width: 40vmax;
+}
+
+.cards .card {
+  color: white;
+  text-align: center;
+  z-index: 1;
+}
+
+.cards .card h2 {
+  margin: 10px;
+}
+
+.portfolio svg {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 0;
+}
+
+
+/* Resume */
+
+.resume {
+  background-color: #c3c4c5;
+  min-height: 100vh;
+}
+
+.resume h1 {
+  background: linear-gradient(to right, #ff8989, #131212);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  padding-top: 10vmin;
+}
+
+.resume .resumeTitle,
+.portfolio .portfolioTitle2 {
+  font-weight: bolder;
 }
