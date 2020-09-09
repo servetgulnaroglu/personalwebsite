@@ -1,7 +1,7 @@
 import React from 'react';
 import servetg from './servetg.JPG';
 
-const Nav = () => (
+const Nav = () => (<>
   <header className="navbar" style={{backgroundImage: "url(" + servetg+ ")"}}>
   <nav>
     <li><a href="">HOME</a></li>
@@ -16,6 +16,7 @@ const Nav = () => (
     <p className="myresume">AND THIS IS MY RESUME</p>
   </div>
   </header>
+  </>
 )
 
 export default Nav;

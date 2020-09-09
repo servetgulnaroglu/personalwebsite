@@ -1,152 +1,351 @@
-/* NAVBAR  */
-
-header {
-  background-size: cover;
-  background-position: 50% 20%;
-  height: 100vh;
-  min-height: 700px;
-}
-
-nav {
-  display: flex;
-  list-style: none;
-  justify-content: space-around;
-  align-items: center;
-  width: 60%;
-  margin: auto;
-  height: 20vh;
-  letter-spacing: 3px;
-  font-weight: 500;
-}
-
-a:visited,
-a:active,
-a:focus,
-a:focus-within {
-  color: rgb(255, 255, 255);
-}
-
-a:hover {
-  color: rgb(46, 24, 24)
-}
-
-.hello {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center !important;
-  justify-content: center;
-  height: 80vh;
-  width: 100%;
-  margin: 0 auto 0 auto;
-  vertical-align: middle;
-}
-
-.hello h1 {
-  color: white;
-  font-size: 10vmin;
-}
-
-.hello p {
-  color: white;
-  font-size: 5vmin;
-}
-
-.hello .myresume {
-  color: rgb(173, 173, 173);
-  font-size: 2vmin;
-  letter-spacing: 5px;
-  font-weight: bold;
-}
-
-@media screen and (max-width :1024px) {
-  nav {
-    width: 80%;
-  }
-}
-
-@media screen and (max-width :600px) {
-  nav {
+  /* NAVBAR  */
+  
+  .loading {
     width: 100%;
+    height: 100%;
+    justify-content: center;
   }
-}
-
-@media screen and (max-width :600px) {
+  
+  header {
+    background-size: cover;
+    background-position: 50% 20%;
+    height: 100vh;
+    min-height: 700px;
+  }
+  
   nav {
-    flex-direction: column;
-    font-size: 12px;
-    line-height: 0;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+    margin: auto;
+    height: 20vh;
+    letter-spacing: 3px;
+    font-weight: 500;
   }
-}
-
-
-/* Portfolio */
-
-.portfolio {
-  background: rgb(51, 51, 51);
-  background: radial-gradient(circle, rgba(51, 51, 51, 1) 5%, rgba(34, 34, 34, 1) 88%);
-  overflow: hidden;
-  position: relative;
-}
-
-.portfolio .portfolioTitle {
-  background: linear-gradient(to right, #5a2222, #ffffff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-align: center;
-  padding: 50px;
-}
-
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.cards .card {
-  object-fit: cover;
-  flex: 0 1 40vmin;
-  margin: 30px;
-}
-
-.cards .card img {
-  max-width: 40vmax;
-}
-
-.cards .card {
-  color: white;
-  text-align: center;
-  z-index: 1;
-}
-
-.cards .card h2 {
-  margin: 10px;
-}
-
-.portfolio svg {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  z-index: 0;
-}
-
-
-/* Resume */
-
-.resume {
-  background-color: #c3c4c5;
-  min-height: 100vh;
-}
-
-.resume h1 {
-  background: linear-gradient(to right, #ff8989, #131212);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-align: center;
-  padding-top: 10vmin;
-}
-
-.resume .resumeTitle,
-.portfolio .portfolioTitle2 {
-  font-weight: bolder;
-}
+  
+  a:visited,
+  a:active,
+  a:focus,
+  a:focus-within {
+    color: rgb(255, 255, 255);
+  }
+  
+  a:hover {
+    color: rgb(46, 24, 24)
+  }
+  
+  .hello {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center !important;
+    justify-content: center;
+    height: 80vh;
+    width: 100%;
+    margin: 0 auto 0 auto;
+    vertical-align: middle;
+  }
+  
+  .hello h1 {
+    color: white;
+    font-size: 10vmin;
+  }
+  
+  .hello p {
+    color: white;
+    font-size: 5vmin;
+  }
+  
+  .hello .myresume {
+    color: rgb(173, 173, 173);
+    font-size: 2vmin;
+    letter-spacing: 5px;
+    font-weight: bold;
+  }
+  
+  @media screen and (max-width :1024px) {
+    nav {
+      width: 80%;
+    }
+  }
+  
+  @media screen and (max-width :600px) {
+    nav {
+      width: 100%;
+    }
+  }
+  
+  @media screen and (max-width :600px) {
+    nav {
+      flex-direction: column;
+      font-size: 12px;
+      line-height: 0;
+    }
+  }
+  /* Portfolio */
+  
+  .portfolio {
+    background: rgb(51, 51, 51);
+    background: radial-gradient(circle, rgba(51, 51, 51, 1) 5%, rgba(34, 34, 34, 1) 88%);
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .portfolio .portfolioTitle {
+    background: linear-gradient(to right, #5a2222, #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    padding: 50px;
+  }
+  
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .cards .card {
+    object-fit: cover;
+    flex: 0 1 40vmin;
+    margin: 30px;
+  }
+  
+  .cards .card img {
+    max-width: 40vmax;
+  }
+  
+  .cards .card {
+    color: white;
+    text-align: center;
+    z-index: 1;
+  }
+  
+  .cards .card h2 {
+    margin: 10px;
+  }
+  
+  .portfolio svg {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 0;
+  }
+  /* Resume */
+  
+  .resume {
+    background-color: #c3c4c5;
+    min-height: 100vh;
+  }
+  
+  .resume h1.mainResumeTitle {
+    background: linear-gradient(to right, #ff8989, #131212);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    padding-top: 10vmin;
+    padding-bottom: 10vmin;
+  }
+  
+  .resume .resumeTitle,
+  .portfolio .portfolioTitle2 {
+    font-weight: bolder;
+    font-size: 10vmin;
+  }
+  
+  .resume .infoCards {
+    margin: 20px;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+  }
+  
+  .education,
+  .experience {
+    display: flex;
+    flex-direction: column;
+    justify-content: safe;
+    flex: 1;
+    margin-left: 5%;
+  }
+  
+  .resume .info {
+    background-color: #312e2e;
+    color: rgb(202, 194, 194);
+    margin: 25px 0 25px 0;
+    width: 90%;
+    border-radius: 3px;
+  }
+  
+  .info .date,
+  .info .place {
+    padding: 15px;
+  }
+  
+  @media screen and (max-width :800px) {
+    .infoCards {
+      flex-direction: column;
+    }
+  }
+  
+  .info h1 {
+    padding: 15px;
+    color: #968989;
+  }
+  /* About */
+  
+  .about svg.aboutFirstSvg {
+    position: relative;
+    left: 0;
+    top: 0;
+    z-index: 0;
+    background-color: #c3c4c5;
+  }
+  
+  .about svg.aboutSecondSvg {
+    position: relative;
+    margin-bottom: -5px;
+  }
+  
+  .about {
+    background: rgb(51, 51, 51);
+    background: radial-gradient(circle, rgba(51, 51, 51, 1) 5%, rgba(34, 34, 34, 1) 88%);
+  }
+  
+  .aboutContainer {
+    display: grid;
+    width: 90%;
+    margin-left: 5%;
+    grid-template-columns: minmax(150px, 55%) 1fr;
+    color: #c3c4c5;
+  }
+  
+  .aboutContainer img {}
+  
+  .aboutContainer img {
+    max-width: 40vmax;
+  }
+  
+  .aboutContainer .aboutContent h1 {
+    background: linear-gradient(to right, #5e5e5e, #ffd6d6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .aboutContainer .aboutContent p {
+    width: 100%;
+    text-align: left;
+    font-size: 2vmax;
+  }
+  
+  .aboutContainer .meSpan {
+    font-weight: bolder;
+    font-size: 28px;
+  }
+  
+  @media screen and (max-width :700px) {
+    .aboutContainer {
+      grid-template-columns: unset;
+      display: block;
+      align-content: center;
+    }
+    .aboutContainer .aboutContent p {
+      width: 80%;
+    }
+    .aboutContainer img {
+      width: 100%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  /* Github repos */
+  
+  .github,
+  .githubHeader {
+    background-color: #c3c4c5;
+  }
+  
+  .githubHeader .githubTitle h1 {
+    text-align: center;
+    background: linear-gradient(to right, #ff8989, #131212);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-bottom: 40px;
+    font-size: 5vmin;
+  }
+  
+  .githubHeader .githubInfo {
+    display: flex;
+    width: 80%;
+    margin-left: 10%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .githubHeader .githubInfo img {
+    width: 200px;
+    padding: 20px;
+  }
+  
+  .githubHeader .githubInfo .nameandfollower {
+    margin: 40px;
+    align-content: center;
+  }
+  /* github repos */
+  
+  .allrepos {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 10%;
+    width: 80%;
+    justify-content: center;
+  }
+  
+  .repo {
+    margin: 10px;
+    width: 400px;
+    background-color: #aaaaaa;
+    border-radius: 3px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+  }
+  
+  .repo:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  }
+  
+  .innerRepo {
+    padding: 10px;
+  }
+  
+  .repo p {
+    padding: 10px;
+  }
+  
+  .repo a {
+    color: black;
+  }
+  
+  a {
+    text-decoration: none;
+    outline: 0;
+  }
+  
+  .repo a:active,
+  .repo a:focus,
+  .repo a:visited,
+  .repo a:focus-within {
+    color: black;
+  }
+  
+  .repo a:hover {
+    color: rgb(128, 88, 88)
+  }
